@@ -152,6 +152,10 @@ li {
 }
 
 @media (max-width: 1024px) {
+    html,body{
+        overflow-x: hidden;
+    }
+
     #bg {
         background-image: url(../images/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
