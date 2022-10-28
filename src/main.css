@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#bg {
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50rem -5rem;
+}
+
+#simplify {
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.btn {
+    display: flex;
+    padding: 0.875em 2em;
+    background-color: hsl(12, 88%, 59%);
+    font-family: inherit;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    place-content: center;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 24px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(228, 39%, 23%);
+}
+
+#btn-two {
+    margin-top: 1rem;
+}
+
+#nav li {
+    position: relative;
+    color: hsl(228, 39%, 23%);
+    font-weight: 500;
+}
+
+#nav li::after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid hsl(12, 88%, 59%);
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    transition: 0.2s;
+}
+
+#nav li:hover::after {
+    width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, transparent, hsl(0, 0%, 0%, 0.8));
+    z-index: 2;
+}
+
+li {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#links ul li {
+    margin-bottom: 1rem;
+}
+
+.btn-test {
+    margin: 0;
+    margin-bottom: 5rem;
+}
+
+.btn-sim {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(12, 88%, 59%);
+    font-weight: 500;
+}
+
+.btn-sim:hover {
+    color: white;
+    background-color: hsl(227, 12%, 61%);
+}
+
+#button .btn, .copyright .btn {
+    display: flex;
+    padding: 0.7em 1.7em;
+    background-color: hsl(12, 88%, 59%);
+    font-family: inherit;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 1s;
+    place-content: center;
+    border-radius: 2rem;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+#button .btn:hover, .copyright .btn:hover {
+    background-color: hsl(228, 39%, 23%);
+}
+
+#go {
+    background-color: hsl(12, 88%, 59%);
+    padding: 0.7em 1.7em;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+#go:hover {
+    background-color: hsl(228, 39%, 23%);
+}
+
+#links ul li {
+    transition: 0.2s;
+}
+
+#links ul li:hover {
+    color: hsl(12, 88%, 59%);
+}
+
+#social img {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #bg {
+        background-image: url(../images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 4rem -3rem;
+    }
+
+    #simplify {
+        background-image: url(../images/bg-simplify-section-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #button .btn, .copyright .btn {
+        margin-top: 0;
+    }
+
+    ul {
+        margin: 1rem 0;
+    }
+    
+    li {
+        margin-bottom: 1.5rem;
+    }
+    
+    #nav li:hover, #nav li:focus {
+        color: hsl(12, 88%, 59%);
+    }
+
+    .mob-nav {
+        box-shadow: hsl(0deg 0% 0% / 20%) 0px 12px 24px;
+    }
+
+    #nav li{
+        width: 50%;
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(233, 26%, 24%);
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    
+    #nav li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #nav li::after {
+        content: none;
+    }
+
+    #links ul {
+        text-align: left;
+    }
+
+    #social img {
+        width: 10%;
+    }
+}

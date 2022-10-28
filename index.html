@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./dist/output.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- ************ -->
+  <title>Frontend Mentor | Manage landing page</title>
+</head>
+<body>
+  <header class="w-full flex flex-col justify-start items-center min-w-375">
+    <div id="bg" class="max-w-5xl w-full flex flex-col justify-start items-center relative lg:max-w-screen-2xl">
+      <nav class="flex flex-row items-center justify-center w-full z-20">
+        <div id="content-nav" class="w-[85%] flex flex-row items-center justify-between my-10 lg:my-4">
+          <img src="images/logo.svg" alt="Logo">
+          <div id="menu" class="z-10 lg:hidden">
+            <img src="images/icon-hamburger.svg" alt="burger" class="menu cursor-pointer">
+            <img src="images/icon-close.svg" alt="close" class="close hidden cursor-pointer">
+          </div>
+          <div class="mob-nav hidden absolute bg-White rounded-md flex flex-col justify-center items-center z-10 top-[14%] w-[85%] lg:flex lg:w-1/2 lg:relative lg:bg-noColor">
+            <ul id="nav" class="flex flex-col text-DarkBlue text-18 w-3/4 items-center justify-center text-center my-8 lg:flex-row lg:my-0 lg:justify-between lg:text-GrayishBlue">
+              <li>Pricing</li>
+              <li>Product</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Community</li>
+            </ul>
+          </div>
+          <div id="button" class="hidden lg:block">
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+      </nav>
+      <div id="hero" class="flex flex-col items-center justify-center w-full overflow-hidden">
+        <div class="overlay hidden"></div>
+        <div id="content-hero" class="flex flex-col items-center justify-center w-[85%] text-center lg:flex-row-reverse lg:justify-between">
+          <img src="images/illustration-intro.svg" alt="illustration" class="lg:w-[45%]">
+          <div id="text" class="flex flex-col items-center justify-center w-full text-center mt-8 lg:text-left lg:items-start lg:mt-0 lg:w-[40%]">
+            <h1 class="font-700 text-DarkBlue text-4xl lg:text-5xl">Bring everyone together to build better products.</h1>
+            <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-base lg:mt-8 lg:text-lg w-3/4">Manage makes it simple for software teams to plan day-to-day 
+              tasks while keeping the larger team goals in view.</p>
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full flex flex-col justify-start items-center min-w-375">
+    <div class="max-w-5xl w-full flex flex-col justify-start items-center mt-20 lg:max-w-screen-2xl">
+      <section class="w-full flex flex-col justify-center items-center lg:flex-row lg:w-[85%] lg:items-start">
+        <div class="flex flex-col items-center justify-center w-[85%] text-center lg:text-left lg:items-start lg:w-1/2">
+          <h2 class="font-700 text-DarkBlue text-3xl lg:text-4xl">What’s different about Manage?</h2>
+          <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-[15px] lg:text-base lg:w-3/5">Manage provides all the functionality your team needs, without 
+            the complexity. Our software is tailor-made for modern digital product teams.</p>
+        </div>
+        <div class="grid grid-cols-1 grid-rows-3 w-[90%] text-center lg:text-left lg:gap-8 lg:items-start lg:w-1/2">
+          <div id="grid-one" class="flex flex-col justify-center items-center w-full mt-10 lg:mt-0 lg:items-start">
+            <div class="mt-6 flex flex-row w-full justify-start items-center bg-VeryPaleRed rounded-3xl lg:bg-noColor lg:mt-0">
+              <span class="px-5 py-3 bg-BrightRed rounded-3xl text-White font-700">01</span>
+              <h3 class="font-700 text-DarkBlue text-base ml-2 lg:ml-4">Track company-wide progress</h3>
+            </div>
+            <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-[15px] text-left lg:ml-[4.7rem]">See how your day-to-day tasks fit into the wider vision. Go from 
+              tracking progress at the milestone level all the way done to the 
+              smallest of details. Never lose sight of the bigger picture again.</p>
+          </div>
+          <div id="grid-two" class="flex flex-col justify-center items-center w-full mt-10 lg:mt-0 lg:items-start">
+            <div class="mt-6 flex flex-row w-full justify-start items-center bg-VeryPaleRed rounded-3xl lg:bg-noColor">
+              <span class="px-5 py-3 bg-BrightRed rounded-3xl text-White font-700">02</span>
+              <h3 class="font-700 text-DarkBlue text-base ml-2 lg:ml-4">Advanced built-in reports</h3>
+            </div>
+            <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-[15px] text-left lg:ml-[4.7rem]">Set internal delivery estimates and track progress toward company 
+              goals. Our customisable dashboard helps you build out the reports 
+              you need to keep key stakeholders informed.</p>
+          </div>
+          <div id="grid-three" class="flex flex-col justify-center items-center w-full mt-10 lg:mt-0 lg:items-start">
+            <div class="mt-6 flex flex-row w-full justify-start items-center bg-VeryPaleRed rounded-3xl lg:bg-noColor">
+              <span class="px-5 py-3 bg-BrightRed rounded-3xl text-White font-700">03</span>
+              <h3 class="font-700 text-DarkBlue text-base ml-2 lg:ml-4">Everything you need in one place</h3>
+            </div>
+            <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-[15px] text-left lg:ml-[4.7rem]">Stop jumping from one service to another to communicate, store files, 
+              track tasks and share documents. Manage offers an all-in-one team 
+              productivity solution.</p>
+          </div>
+        </div>
+      </section>
+      <section class="w-full flex flex-col justify-center items-center mt-16 lg:mt-40">
+        <div class="flex flex-col items-center justify-center w-[85%] text-center lg:text-left lg:items-center">
+          <h2 class="font-700 text-DarkBlue text-3xl">What they’ve said</h2>
+        </div>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+        <style>
+        .cursor-grab {
+            cursor: grab;
+        }
+        </style>
+
+        <div class="grid grid-cols-3 grid-rows-1 w-[90%] text-center hidden lg:text-left lg:gap-24 lg:items-start lg:w-[85%] lg:grid my-20">
+          <div id="grid-test-one" class="flex flex-col justify-center items-center w-full mt-10 lg:mt-0">
+            <img src="images/avatar-anisha.png" alt="anisha" class="w-24 h-24 border rounded-full mx-auto mb-8 overflow-hidden bg-cover bg-center">
+            <div class="mt-6 flex flex-col w-full justify-start items-center bg-VeryPaleRed rounded-3xl lg:bg-noColor lg:mt-0">
+              <h3 class="font-700 text-DarkBlue text-base">Anisha Li</h3>
+              <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-sm text-center">“Manage has supercharged our team’s workflow. The ability to maintain 
+                visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+          </div>
+          <div id="grid-test-two" class="flex flex-col justify-center items-center w-full mt-10 lg:mt-0">
+            <img src="images/avatar-ali.png" alt="ali" class="w-24 h-24 border rounded-full mx-auto mb-8 overflow-hidden bg-cover bg-center">
+            <div class="mt-6 flex flex-col w-full justify-start items-center bg-VeryPaleRed rounded-3xl lg:bg-noColor lg:mt-0">
+              <h3 class="font-700 text-DarkBlue text-base">Ali Bravo</h3>
+              <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-sm text-center">“We have been able to cancel so many other subscriptions since using 
+                Manage. There is no more cross-channel confusion and everyone is much 
+                more focused.”</p>
+            </div>
+          </div>
+          <div id="grid-test-three" class="flex flex-col justify-center items-center w-full mt-10 lg:mt-0">
+            <img src="images/avatar-richard.png" alt="richard" class="w-24 h-24 border rounded-full mx-auto mb-8 overflow-hidden bg-cover bg-center">
+            <div class="mt-6 flex flex-col w-full justify-start items-center bg-VeryPaleRed rounded-3xl lg:bg-noColor lg:mt-0">
+              <h3 class="font-700 text-DarkBlue text-base">Richard Watts</h3>
+              <p class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-sm text-center">“Manage allows us to provide structure and process. It keeps us organized 
+                and focused. I can’t stop recommending them to everyone I talk to!”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-5 py-5 lg:hidden">
+            <div class="w-full mx-auto rounded-3xl bg-white px-5 pt-8 pb-5 text-gray-600" style="max-width: 350px" x-data="app()">
+                <div class="overflow-hidden relative mb-10">
+                    <div class="overflow-hidden cursor-grab relative" @pointerdown="touchstartX=$event.screenX,touchstartY=$event.screenY" @pointerup="touchendX=$event.screenX,touchendY=$event.screenY,$nextTick(()=>handleSwipe())">
+                        <template x-for="(item,index) in slides">
+                            <div class="w-full overflow-hidden text-center select-none" x-show="item.show" x-transition:enter="transition duration-300 transform ease" :x-transition:enter-start="currentTransition.start" :x-transition:enter-end="currentTransition.end" x-transition:leave="absolute top-0 left-0 transition duration-300 transform ease" :x-transition:leave-start="previousTransition.start" :x-transition:leave-end="previousTransition.end">
+                                <div class="w-24 h-24 border rounded-full mx-auto mb-8 overflow-hidden bg-cover bg-center" :style="`background-image:url(${item.img})`"></div>
+                                <h2 x-text="item.title" class="font-700 text-DarkBlue text-xl mb-4"></h2>
+                                <p x-text="item.body" class="font-400 text-DarkGrayishBlue mt-4 leading-7 text-[15px]"></p>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <template x-for="(item,index) in slides">
+                        <span :id="`slideDot${index}`" class="w-2 h-2 rounded-full mx-1" :class="{'bg-BrightRed':index==currentIndex,'bg-DarkGrayishBlue':index!==currentIndex}"></span>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        function app() {
+            return {
+                touchstartX: 0,
+                touchstartY: 0,
+                touchendX: 0,
+                touchendY: 0,
+                previousIndex: 0,
+                currentIndex: 0,
+                previousTransition: {
+                    start: null,
+                    end: null,
+                },
+                currentTransition: {
+                    start: null,
+                    end: null,
+                },
+                slides: [
+                    {
+                        show:true,
+                        img: './images/avatar-anisha.png',
+                        title: 'Anisha Li',
+                        body: '“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”',
+                    },
+                    {
+                        img: './images/avatar-ali.png',
+                        title: 'Ali Bravo',
+                        body: '“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”',
+                    },
+                    {
+                        img: './images/avatar-richard.png',
+                        title: 'Richard Watts',
+                        body: '“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”',
+                    },
+                    {
+                        img: './images/avatar-shanai.png',
+                        title: 'Shanai Gough',
+                        body: '“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”',
+                    }
+                ],
+                handleSwipe: function() {
+                    // Stop
+                    if( this.touchstartX - this.touchendX > -20 && this.touchstartX - this.touchendX < 20 ) return;
+                    // Set previous index
+                    this.previousIndex = this.currentIndex;
+                    // Swipe
+                    if (this.touchendX < this.touchstartX) {
+                        // Swipe left
+                        this.currentIndex = Math.min(this.slides.length-1,this.currentIndex+1);
+                        this.previousTransition.start = 'translate-x-none opacity-1';
+                        this.previousTransition.end = '-translate-x-1/4 opacity-0';
+                        this.currentTransition.start = 'translate-x-1/4 opacity-0';
+                        this.currentTransition.end = 'translate-x-none opacity-1';
+                    } else {
+                        // Swipe right
+                        this.currentIndex = Math.max(0,this.currentIndex-1);
+                        this.previousTransition.start = 'translate-x-none opacity-1';
+                        this.previousTransition.end = 'translate-x-1/4 opacity-0';
+                        this.currentTransition.start = '-translate-x-1/4 opacity-0';
+                        this.currentTransition.end = 'translate-x-none opacity-1';
+                    }
+                    // Check previous index
+                    if( this.previousIndex !== this.currentIndex ) {
+                        this.showSlide();
+                    }
+                },
+                showSlide: function() {
+                    for(let i = 0; i < this.slides.length; i++){
+                        this.slides[i].show = i == this.currentIndex;
+                    }
+                }
+            }
+        }
+        </script>
+        <button class="btn btn-test">Get Started</button>
+      </section>
+    </div>
+  </main>
+  <footer class="w-full flex flex-col justify-start items-center min-w-375">
+    <div id="simplify" class="max-w-5xl flex flex-col justify-center items-center w-full bg-BrightRed lg:max-w-screen-2xl lg:flex-row lg:justify-center lg:py-6">
+      <div class="my-16 flex flex-col items-center justify-center w-[85%] lg:flex-row lg:justify-between">
+        <h1 class="font-500 text-White text-4xl text-center w-[80%] leading-snug lg:w-2/5 lg:text-left">Simplify how your team works today.</h1>
+        <button class="btn btn-sim">Get Started</button>
+      </div>
+    </div>
+    <div id="foot" class="max-w-5xl flex flex-col justify-start items-center w-full bg-VeryDarkBlue lg:max-w-screen-2xl lg:flex-row lg:justify-center lg:py-6">
+      <div class="w-full flex flex-col justify-center items-center mt-10  lg:flex-row-reverse lg:items-start">
+        <div id="input" class="flex flex-col justify-between items-center w-full relative lg:items-start">
+          <div class="flex flex-row justify-center items-center w-[90%] lg:mb-20">
+            <label for="inbox" class="flex flex-row justify-between items-center w-[90%]">
+              <input type="text" id="inbox" name="text" placeholder="Updates in your inbox..." class="rounded-3xl px-[1.7rem] py-[0.7rem] text-base w-[95%]">
+            </label>
+            <input id="go" type="submit" value="GO">
+          </div>
+          <span class="text-sm text-DarkGrayishBlue absolute top-[810%] lg:static">Copyright 2020. All Rights Reserved</span>
+        </div>
+        <div id="links" class="w-full flex flex-row justify-center items-start text-White ml-28 mt-8 text-left lg:flex-row lg:mt-0 lg:ml-0">
+          <ul class="w-full flex flex-col justify-center items-start my-0 text-left">
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>Products</li>
+            <li>About Us</li>
+          </ul>
+          <ul class="w-full flex flex-col justify-center items-start my-0">
+            <li>Careers</li>
+            <li>Community</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="w-full flex flex-col justify-center items-center mt-6 mb-20 lg:mt-0 lg:flex-col-reverse">
+          <div id="social" class="w-3/4 flex flex-row justify-evenly items-center mb-8 lg:mb-0 lg:w-1/2">
+            <img src="images/icon-facebook.svg" alt="facebook">
+            <img src="images/icon-youtube.svg" alt="youtube">
+            <img src="images/icon-twitter.svg" alt="twitter">
+            <img src="images/icon-pinterest.svg" alt="pinterest">
+            <img src="images/icon-instagram.svg" alt="instagram">
+          </div>
+          <img id="logo" src="images/logo-white.svg" alt="Logo" class="mb-14">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="src/main.js"></script>
+</body>
+</html>
